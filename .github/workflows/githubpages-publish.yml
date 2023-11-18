@@ -17,9 +17,12 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependencies
+      - name: Install base dependencies
+        run: npm install
+
+
+      - name: Install linting dependencies
         run: |
-          npm install
           npm install htmlhint -g
           npm install stylelint stylelint-config-standard --save-dev
           npm install eslint --save-dev
@@ -32,9 +35,6 @@ jobs:
 
       - name: Lint JavaScript
         run: npm run lint:js
-
-      - name: Build
-        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
