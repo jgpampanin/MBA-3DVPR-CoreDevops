@@ -48,6 +48,12 @@ jobs:
       - name: Lint JavaScript
         run: npm run lint:js
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: 'public/build'
+
   deploy:
     environment:
       name: github-pages
