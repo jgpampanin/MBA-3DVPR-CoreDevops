@@ -4,20 +4,30 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Conversor de Unidades</h1>
-    <input id="valor" type="number" placeholder="Valor">
-    <select id="unidadeOrigem">
-        <option value="m">metros</option>
-        <option value="km">quilômetros</option>
-        <option value="cm">centímetros</option>
-    </select>
-    <select id="unidadeDestino">
-        <option value="m">metros</option>
-        <option value="km">quilômetros</option>
-        <option value="cm">centímetros</option>
-    </select>
-    <button onclick="converter()">Converter</button>
-    <p id="resultado"></p>
+    <div id="conversor">
+        <div id="titulo">
+            <h1>Conversor de Unidades</h1>
+        </div>
+        <div id="entrada">
+            <input id="valor" type="number" placeholder="Valor">
+            <select id="unidadeOrigem">
+                <option value="m">metros</option>
+                <option value="km">quilômetros</option>
+                <option value="cm">centímetros</option>
+                <!-- adicione mais unidades conforme necessário -->
+            </select>
+            <select id="unidadeDestino">
+                <option value="m">metros</option>
+                <option value="km">quilômetros</option>
+                <option value="cm">centímetros</option>
+                <!-- adicione mais unidades conforme necessário -->
+            </select>
+        </div>
+        <div id="saida">
+            <button onclick="converter()">Converter</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
