@@ -1,3 +1,4 @@
+/* exported converter */
 function converter() {
     var valor = document.getElementById('valor').value;
     var unidadeOrigem = document.getElementById('unidadeOrigem').value;
