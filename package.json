@@ -1,0 +1,17 @@
+{
+    "name": "mba-3dvpr-coredevops",
+    "version": "1.0.0",
+    "scripts": {
+      "lint:html": "htmlhint '**/*.html'",
+      "lint:css": "stylelint '**/*.css'",
+      "lint:js": "eslint '**/*.js'"
+    },
+    "author": "",
+    "devDependencies": {
+      "eslint": "^7.32.0",
+      "htmlhint": "^0.16.3",
+      "stylelint": "^13.13.1",
+      "stylelint-config-standard": "^22.0.0"
+    }
+}
+  
